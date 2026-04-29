@@ -62,13 +62,17 @@ Se instaló **OpenSSH Server** para habilitar la administración remota vía ter
 
 ---
 
-## 📂 Estructura del Repositorio
-```text
-.
-├── README.md
-└── img/
-    ├── bios_check.png      # Administrador de Tareas (CPU > Virtualización)
-    ├── extension_pack.png   # VirtualBox > Preferencias > Extensiones
-    ├── setup_vm_1.png      # Creación de la VM en VirtualBox
-    ├── network_config.png   # IP asignada en la instalación de Ubuntu
-    └── ssh_setup.png        # Paso de OpenSSH marcado con [X]
+### Fase 4: Validación de Acceso Remoto (Prueba Final)
+Para cumplir con los objetivos del proyecto, se realizó la validación de conectividad desde el **Host (Windows)** hacia el **Guest (Servidor Linux)** utilizando la terminal de **VS Code**. 
+
+Se estableció la conexión mediante el comando:
+`ssh facundo@192.168.0.212`
+
+**Resultado:** Acceso remoto exitoso sin necesidad de interfaz gráfica, validando la arquitectura cliente-servidor.
+
+![Validación Acceso Remoto SSH](./img/validacion-ssh-host.png)
+
+
+## Organización del Proyecto
+- `README.md` -> Documentación técnica y guía de pasos.
+- `/img`       -> Evidencias visuales de la configuración y validación.
